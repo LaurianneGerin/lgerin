@@ -33,17 +33,32 @@ export default function HTML(props) {
                     return Math.floor(Math.random() * (max - min + 1)) + min;
                 }
                 window.setInterval(() => {
+                  var frontDots = document.querySelectorAll('.dot-front');
                   var colors = ['#FFE070', '#F87D97', '#D8B0FA', '#B8E986', '#81B7EC', '#FBC264', '#D01044', '#FCC2FF'];
-                  var balls = document.querySelectorAll('.bounce-ball');
-                  balls.forEach((ball) => {
+                  frontDots.forEach((dot, index) => {
                     var whichColor = getRandomInt(0,7);
                     var colorIs = colors[whichColor];
-                    ball.style.backgroundColor = colorIs;
+                    dot.style.backgroundColor = colorIs;
                   })
-                }, 1000)
+                }, 500);
             `,
           }}
         />
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.onload = () => {
+              var dots = document.querySelectorAll('.dot');
+              dots.forEach((dot) => {
+                dot.addEventListener('mouseover', (e) => {
+                  dot.style.transform = "rotateY(540deg)";
+                })
+                dot.addEventListener('mouseleave', (e) => {
+                  dot.style.transform = "rotateY(-360deg)";
+                })
+              });
+            };
+          `,
+        }}/>
       </body>
     </html>
   )

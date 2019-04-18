@@ -1,15 +1,41 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import BounceBall from "../components/bounceball"
+import Dot from "../components/dot"
 
 const IndexPage = ({data}) => (
   <div className="boucing-zone">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <BounceBall color="D01044"/>
-    <BounceBall color="F87D97"/>
-    <BounceBall color="D8B0FA"/>
-    <BounceBall color="FBC264"/>
+    <Dot color="D01044"/>
+    <Dot color="F87D97"/>
+    <Dot color="D8B0FA"/>
+    <Dot color="FBC264"/>
+    <Dot color="81B7EC"/>
+    <Dot color="FBC264"/>
+    <Dot color="D01044"/>
+    <Dot color="FCC2FF"/>
+    <Dot color="D01044"/>
+    <Dot color="F87D97"/>
+    <Dot color="D8B0FA"/>
+    <Dot color="FBC264"/>
+    <Dot color="81B7EC"/>
+    <Dot color="FBC264"/>
+    <Dot color="D01044"/>
+    <Dot color="FCC2FF"/>
+    <Dot color="D01044"/>
+    <Dot color="F87D97"/>
+    <Dot color="D8B0FA"/>
+    <Dot color="FBC264"/>
+    <Dot color="81B7EC"/>
+    <Dot color="FBC264"/>
+    <Dot color="D01044"/>
+    <Dot color="FCC2FF"/>
+    <Dot color="FBC264"/>
+    <Dot color="D01044"/>
+    <Dot color="FCC2FF"/>
+    <Dot color="FBC264"/>
+    <Dot color="D01044"/>
+    <Dot color="FCC2FF"/>
   </div>
 )
 
