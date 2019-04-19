@@ -53,7 +53,7 @@ export default function HTML(props) {
                   dot.style.transform = "rotateY(540deg)";
                 })
                 dot.addEventListener('mouseleave', (e) => {
-                  dot.style.transform = "rotateY(-360deg)";
+                  dot.style.transform = "rotateY(-180deg)";
                 })
               });
             };
