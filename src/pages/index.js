@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Dot from "../components/dot"
 
 const IndexPage = ({data}) => (
-  <div className="boucing-zone">
+  <div className="home-page">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Dot color="D01044"/>
     <Dot color="F87D97"/>
@@ -36,6 +36,11 @@ const IndexPage = ({data}) => (
     <Dot color="FBC264"/>
     <Dot color="D01044"/>
     <Dot color="FCC2FF"/>
+    <div className="home-content">
+      <div className="corner top-left-corner"></div>
+      <h1 className="title">Coming soon...</h1>
+      <div className="corner bottom-right-corner"></div>
+    </div>
   </div>
 )
 
