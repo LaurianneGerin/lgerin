@@ -1,0 +1,77 @@
+body {
+    font-family: Monaco, MonoSpace, sans-serif !important;
+}
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home-content {
+    position: relative;
+    width: 80%;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.corner {
+    height: 200px;
+    width: 200px;
+}
+
+.bottom-right-corner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.bottom-right-corner-title > span {
+    font: 20px Monaco, MonoSpace;
+    font-weight: 600;
+    height: 150px;
+    position: absolute;
+    width: 20px;
+    left: 0;
+    bottom: -25px;
+    transform-origin: bottom center;
+}
+
+.bottom-right-corner-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.top-left-corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+}
+
+.title {
+    font-weight: 400;
+}
+
+@for $i from 1 through 100 {
+    .bottom-right-char#{$i} {
+        color: black;
+        transform: rotate(-90 + 9 * $i +deg);
+    }
+}
+
+@for $i from 1 through 100 {
+    .top-left-char#{$i} {
+        color: black;
+        transform: rotate(90 + 9 * $i +deg);
+    }
+}

@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Dot from "../src/components/dot"
 
 export default function HTML(props) {
   return (
@@ -34,13 +35,13 @@ export default function HTML(props) {
                 }
                 window.setInterval(() => {
                   var frontDots = document.querySelectorAll('.dot-front');
-                  var colors = ['#FFE070', '#F87D97', '#D8B0FA', '#B8E986', '#81B7EC', '#FBC264', '#D01044', '#FCC2FF'];
+                  var colors = ['#6DD800', '#FF9F00', '#0E86FB', '#FFC700', '#FF0045', '#FF2C8C', '#9114FF', '#F440FF'];
                   frontDots.forEach((dot, index) => {
                     var whichColor = getRandomInt(0,7);
                     var colorIs = colors[whichColor];
                     dot.style.backgroundColor = colorIs;
                   })
-                }, 500);
+                }, 800);
             `,
           }}
         />
@@ -50,10 +51,10 @@ export default function HTML(props) {
               var dots = document.querySelectorAll('.dot');
               dots.forEach((dot) => {
                 dot.addEventListener('mouseover', (e) => {
-                  dot.style.transform = "rotateY(540deg)";
+                  dot.style.transform = "rotateY(360deg)";
                 })
                 dot.addEventListener('mouseleave', (e) => {
-                  dot.style.transform = "rotateY(-180deg)";
+                  dot.style.transform = "rotateY(-360deg)";
                 })
               });
             };
