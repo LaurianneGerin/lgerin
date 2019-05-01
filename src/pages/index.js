@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import SEO from "../components/seo"
 import Dot from "../components/dot"
+import "../style/layouts.scss"
 
 const IndexPage = ({data}) => (
   <div className="home-page">

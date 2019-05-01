@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Laurianne KG`,
+    title: `Laurianne Gerin`,
     description: `A fun portfolio as well as a test field of creativity by Laurianne KG`,
-    author: `Laurianne KG`,
+    author: `Laurianne Gerin`,
   },
+  pathPrefix: "/lgerin",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,

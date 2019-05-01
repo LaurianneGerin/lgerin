@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Dot from "../src/components/dot"
 
 export default function HTML(props) {
   return (
