@@ -34,7 +34,7 @@
 
 .dot-back {
     transform: rotateY(180deg);
-    background-image: url('../images/gold.png') !important;
-    background-size: contain;
+    background-color: black !important;
+    border: 2px solid ;
     border-radius: 50%;
 }
