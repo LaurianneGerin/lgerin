@@ -44,21 +44,6 @@ export default function HTML(props) {
             `,
           }}
         />
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.onload = () => {
-              var dots = document.querySelectorAll('.dot');
-              dots.forEach((dot) => {
-                dot.addEventListener('mouseover', (e) => {
-                  dot.style.transform = "rotateY(360deg)";
-                })
-                dot.addEventListener('mouseleave', (e) => {
-                  dot.style.transform = "rotateY(-360deg)";
-                })
-              });
-            };
-          `,
-        }}/>
       </body>
     </html>
   )

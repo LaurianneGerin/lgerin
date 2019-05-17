@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Laurianne Gerin`,
-    description: `A fun portfolio as well as a test field of creativity by Laurianne KG`,
+    description: `A fun portfolio as well as a test field of creativity by LG`,
     author: `Laurianne Gerin`,
+    image: `${__dirname}/src/images/LG.png`
   },
   pathPrefix: "/lgerin",
   plugins: [
@@ -37,7 +38,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `${__dirname}/src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `${__dirname}/src/images/LG.png`, // This path is relative to the root of the site.
       },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
