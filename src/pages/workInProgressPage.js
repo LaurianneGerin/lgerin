@@ -30,7 +30,7 @@ const WorkInProgressPage = ({data}) => (
 		<Dot color="FF2C8C"/>
 		<Dot color="9114FF"/>
 		<Dot color="F440FF"/>
-		<div className="home-content">
+		<div className="work-in-progess-content">
 			<div className="corner top-left-corner"></div>
 			<h1 className="title">Coming soon...</h1>
 			<div className="corner bottom-right-corner">
