@@ -7,9 +7,8 @@ import Img from "gatsby-image"
 const IndexPage = ({data}) => (
   <div className="home-page">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    {/* <Img fluid={data.imageTwo.childImageSharp.fluid} style={{ width: '100%', height: '100%', position: 'absolute', top: '0' }} /> */}
     <div className="home-page-header">
-      <Img fluid={data.imageOne.childImageSharp.fluid} style={{ width: '200px' }}/>
+      <Img fluid={data.imageOne.childImageSharp.fluid} style={{ width: '40%' }}/>
       <h1>Développeur front-end</h1>
       <h3>Enthousiaste de design</h3>
     </div>
@@ -46,7 +45,7 @@ export const pageQuery = graphql `
     },
     imageTwo: file(relativePath: { eq: "home-background.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
