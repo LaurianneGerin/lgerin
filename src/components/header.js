@@ -1,42 +1,30 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { StaticQuery, graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query HeaderQuery {
+        logo: file(relativePath: { eq: "LG.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <header>
+        <Link className="header-link biographie-link" to={ '/biographie/' }> Biographie </Link>
+        <Link className="header-link experience-link" to={ '/experiences/' }> Expériences </Link>
+        <Link className="header-link work-link" to={ '/work/' }> Réalisations </Link>
+        <Link className="header-link contact-link" to={ '/contact/' }> Contact </Link>
+        <Link className="home-link" to={ '/' }>
+          <Img fluid={data.logo.childImageSharp.fluid}/>
         </Link>
-      </h1>
-    </div>
-  </header>
+      </header>
+    )}
+  />
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

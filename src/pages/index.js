@@ -1,8 +1,9 @@
 import React from "react"
-import { graphql, Link } from 'gatsby'
+import { graphql, Link } from "gatsby"
 
 import SEO from "../components/seo"
 import Img from "gatsby-image"
+import Footer from "../components/footer"
 
 const IndexPage = ({data}) => (
   <div className="home-page">
@@ -25,12 +26,8 @@ const IndexPage = ({data}) => (
         <Link className="footer-link work-link" to={ '/work/' }> Réalisations </Link>
         <Link className="footer-link contact-link" to={ '/contact/' }> Contact </Link>
       </div>
-      <div className="footer-icons">
-        <a href={'https://www.linkedin.com/in/laurianne-gerin/'}><i className="fab fa-linkedin"></i></a>
-        <a href={'tel:0650952789'}><i className="fas fa-phone-square-alt"></i></a>
-        <a href={'mailto:laurianne.gerin@gmail.com'}><i className="fas fa-envelope-square"></i></a>
-      </div>
      </div>
+     <Footer />
   </div>
 )
 

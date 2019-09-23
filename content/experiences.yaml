@@ -1,0 +1,39 @@
+-  experience:
+    name: wagon
+    company: Le Wagon
+    date: 05/2019 - 06/2019
+    job: Teacher Assistant
+    short: 9-week coding bootcamp that teaches students how to code tech products
+    skills:
+      - First educational approach on coding
+      - Developed debugging skills and synthetized challenging student ideas
+      - Consultant on design aspects of students projects
+-  experience:
+    name: norauto
+    company: Norauto
+    date: 03/2018 - 01/2019
+    job: Front-end Developer
+    short: Project of updating Norauto's IT system (international car repare company)
+    skills:
+      - Development of web applications for internal administrative system
+      - Front-end tools Vue.JS, React and Polymer
+      - Learned mobile first, TDD & BDD development
+-  experience:
+    name: finursery
+    company: FiNursery
+    date: 09/2017 - 01/2018
+    job: Front-end Developer
+    short: Neo-bank project for craftsmen and small businesses
+    skills:
+      - Built a responsive website on tablet and mobile
+      - Developed the core web application in React/Redux.js
+-  experience:
+    name: azendoo
+    company: Azendoo
+    date: 10/2016 - 08/2017
+    job: Junior Front-end Developer
+    short: Azendoo is a multi-task teamwork application
+    skills:
+      - Learned JS and React in less than 3 months
+      - Developed and polished small to main product features
+      - Integrated responsive webpages according to design
