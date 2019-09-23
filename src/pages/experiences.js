@@ -29,7 +29,7 @@ const experiencesPage = () => {
             })[0].node.publicURL
           
           return (
-            <div className={`${experienceList.experience.name}`} key={index}>
+            <div className={'experience ' + experienceList.experience.name} key={index}>
               <img src={imagePath} alt={experienceList.experience.name} className="experience-image"/>
               <div className="experience-details">
                 <h4 className="company-name">{experienceList.experience.company}</h4>

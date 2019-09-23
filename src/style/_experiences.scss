@@ -2,20 +2,37 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-}
-
-.experience-page-title {
-    border-bottom: 10px solid #58ACFF;
-    text-align: center;
-    width: 35%;
+    margin: 0 5%;
 }
 
 .experience {
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
-    padding: 2%;
+    padding: 8%;
     margin: 2% 4%;
+}
+
+.experience:nth-child(odd) {
+    outline: 5px solid #FF2C8C;
+    outline-style: outset;
+    grid-column: 1;
+}
+.experience:nth-child(even) {
+    outline: 5px solid #FF9200;
+    outline-style: outset;
+    grid-column: 2;
+}
+.wagon {
+    grid-row: 1;
+}
+.norauto {
+    grid-row: 2;
+}
+.finursery {
+    grid-row: 3;
+}
+.azendoo {
+    grid-row: 4;
 }
 
 .calendar-icon{
@@ -25,25 +42,20 @@
 .experience-image {
     height: 50px;
     width: 50px;
-    margin-bottom: 0;
-    justify-self: center;
-    align-self: center;
+    margin-bottom: 15px;
 }
 
 .experience-dates {
-    text-align: center;
+    font-size: 14px;
 }
 .company-name {
-    text-align: center;
     font-weight: bolder;
     margin: 1% 0;
 }
 .company-short-description {
     font-style: italic;
-    text-align: center;
 }
 .experience-skills-list {
-    list-style: circle;
     margin-bottom: 0;
 }
 
