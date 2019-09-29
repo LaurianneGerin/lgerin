@@ -46,17 +46,6 @@ export const pageQuery = graphql `
           ...GatsbyImageSharpFluid
         }
       }
-    },
-    allMarkdownRemark(limit: 10) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            path
-          }
-        }
-      }
     }
   }
 `
